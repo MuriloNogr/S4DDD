@@ -1,0 +1,5 @@
+com\portoResq\api\PrestadorResource.class
+com\portoResq\model\Prestador.class
+com\portoResq\dao\PrestadorDAO.class
+com\portoResq\database\DatabaseConnection.class
+com\portoResq\service\PrestadorService.class
