@@ -7,10 +7,13 @@ public class Prestador {
     private String modeloGuincho;
     private String nome;
 
-    // Construtores
-    public Prestador() {}
+    public Prestador(String email, String senha, String modeloGuincho, String nome) {
+        this.email = email;
+        this.senha = senha;
+        this.modeloGuincho = modeloGuincho;
+        this.nome = nome;
+    }
 
-    // Getters e Setters
     public int getId() {
         return id;
     }
@@ -27,6 +30,28 @@ public class Prestador {
         this.email = email;
     }
 
-    // Continuação dos getters e setters para os outros campos...
-}
+    public String getSenha() {
+        return senha;
+    }
 
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public String getModeloGuincho() {
+        return modeloGuincho;
+    }
+
+    public void setModeloGuincho(String modeloGuincho) {
+        this.modeloGuincho = modeloGuincho;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+}

@@ -13,5 +13,18 @@ public class PrestadorService {
         return dao.getPrestadores();
     }
 
-    // Outros métodos para CREATE, UPDATE, DELETE...
+    public void addPrestador(Prestador prestador) {
+        // Validações, se necessário, e chama DAO
+        dao.addPrestador(prestador);
+    }
+
+    public void updatePrestador(int id, Prestador prestador) {
+        // Validações e chama DAO
+        dao.updatePrestador(id, prestador);
+    }
+
+    public void deletePrestador(int id) {
+        // Validações e chama DAO
+        dao.deletePrestador(id);
+    }
 }
